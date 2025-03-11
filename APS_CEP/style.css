@@ -1,0 +1,22 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center
+}
+
+.box {
+    width: 700px;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 0px 15px 10px 8px;
+}
+
+.box input {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+ul li{
+    list-style: none;
+    text-align: left;
+    margin-left: 5px;
+}
