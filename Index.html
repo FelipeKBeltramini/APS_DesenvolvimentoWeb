@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de despesas</title>
+
+    <script src="js/calculadora.js"></script>
+
+</head>
+
+<body>
+    <h1>Calculadora de despesas</h1>
+
+    <form>
+        <label>Informe a descricao da despesa:</label>
+        <br>
+        <input type="text" name="nome" id="nome" maxlength="60">
+    </form>
+    <br>
+    <form>
+        <label>Informe o valor da despesa:</label>
+        <br>
+        <input type="text" name="valor" id="valor" maxlength="60">
+        <button onclick="s.inserir();" type="button" id="btnInserir" name="btnInserir">Inserir despesa</button>
+    </form>
+
+    <h2>Lista de despesas:</h2>
+
+    <ul id="nomeDespesas">
+    </ul>
+
+    <button onclick="s.apagarLista();" id="btnApagar" name="btnApagar">Apagar lista</button>
+
+    <h3>Despesa mais cara:<span id="despesaMaisCara"></span></h3>
+    <h3>Despesa mais barata:<span id="despesaMaisBarata"></span></h3>
+    <h3>Valor médio das despesas:<span id="valorMedio"></span></h3>
+    <h3>Valor total:<span id="valorTotal"></span></h3>
+
+</body>
+</html>
